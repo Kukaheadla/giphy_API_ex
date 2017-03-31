@@ -9,7 +9,7 @@ $('.search-btn').click(function(){
   var title = $("input[name='search-txt']").val();
 
   $.ajax({
-      url: 'http://api.giphy.com/v1/gifs/search?',
+      url: 'https://api.giphy.com/v1/gifs/search?',
       data: {q: title, api_key: "dc6zaTOxFJmzC", limit: gifLimit, offset: offset },
       method: 'get'
     }).done(function(output){
