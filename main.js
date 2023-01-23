@@ -10,7 +10,7 @@ $('.search-btn').click(function(){
 
   $.ajax({
       url: 'https://api.giphy.com/v1/gifs/search?',
-      data: {q: title, api_key: "dc6zaTOxFJmzC", limit: gifLimit, offset: offset },
+      data: {q: title, api_key: "k2SHmR88CSGOAndIWIQp8jZSpm2kCz5I", limit: gifLimit, offset: offset },
       method: 'get'
     }).done(function(output){
       console.log(output);
@@ -34,7 +34,7 @@ $(window).scroll(function(){
 
      $.ajax({
          url: 'https://api.giphy.com/v1/gifs/search?',
-         data: {q: title, api_key: "dc6zaTOxFJmzC", limit: gifLimit+10, offset: offset+=10},
+         data: {q: title, api_key: "k2SHmR88CSGOAndIWIQp8jZSpm2kCz5I", limit: gifLimit+10, offset: offset+=10},
          method: 'get'
        }).done(function(output){
          console.log(output);
